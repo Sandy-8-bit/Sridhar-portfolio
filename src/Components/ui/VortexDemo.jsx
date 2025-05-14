@@ -11,7 +11,7 @@ export function VortexDemo() {
           Hello! I'm SRIDHAR
         </h2>
         <h2 className="text-[#a9a9a9] text-xl md:text-4xl font-bold text-center">Video Editor - converting video into <br></br> <Cover className={"cursor-pointer"}>leads</Cover></h2>
-                <button className="mt-4 px-6 py-2 cursor-pointer rounded-[9px] bg-[#3d9731] hover:bg-[#58fd42b3] text-white text-sm md:text-base transition duration-300">
+                <button className="mt-4 px-6 py-2 cursor-pointer rounded-[9px] bg-[#8635a3] hover:bg-[#6f4072] text-white text-sm md:text-base transition duration-300">
           Contact Me
         </button>
         
