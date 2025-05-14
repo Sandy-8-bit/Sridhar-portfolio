@@ -22,12 +22,12 @@ export function ThreeDCardDemo() {
   ];
 
   return (
-    <div className="flex flex-col items-start  px-4 py-12 gap-5 md:gap-10">
+    <div className="flex flex-col items-start  px-4  gap-5 md:gap-10">
       {/* Section Title */}
        <h2 className=" text-white font-bold" style={{ fontSize: 'clamp(1.5rem, 2vw, 2.25rem)' }}>What Can I Do</h2>
 
       {/* Cards */}
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap w-full justify-between gap-8">
         {cards.map((card, index) => (
           <CardContainer key={index} className="inter-var">
             <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full sm:w-[18rem] md:w-[20rem] lg:w-[22rem] h-auto rounded-xl p-6 border">
@@ -48,17 +48,6 @@ export function ThreeDCardDemo() {
                   className="h-48 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                 />
               </CardItem>
-              <div className="flex justify-start mt-10">
-                <CardItem
-                  translateZ={20}
-                  as="a"
-                  href="https://twitter.com/mannupaaji"
-                  target="__blank"
-                  className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-                >
-                  Check it out →
-                </CardItem>
-              </div>
             </CardBody>
           </CardContainer>
         ))}

@@ -27,7 +27,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full text-white p-4 bg-black relative">
+    <div className="w-full text-white p-4  relative">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <h2 className="text-2xl font-semibold">Sridhar</h2>
 
