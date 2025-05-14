@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+
+body {
+  background: linear-gradient(to right, #000000, #060806);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  color: #f5f5f5; /* Better contrast */
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@layer utilities {
+  .p-font {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .s-font {
+    font-family: "Geist", sans-serif;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;    /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;            /* Chrome, Safari, Opera */
+  }
+}
+
+/* Define custom animations in a plugin or outside Tailwind config */
+/* This keyframe won't work inside CSS without postcss plugin setup */
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
+/* Optional custom animation class if needed */
+.animate-scroll {
+  animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+}
