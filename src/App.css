@@ -5,3 +5,10 @@
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  #root {
+    padding: 0.5rem;
+    padding-top: 0;
+    text-align: center;
+  }
+}
