@@ -4,10 +4,10 @@ import { ArrowUpRight } from 'lucide-react';
 const projects = [
   { title: "Portfolio Website", video: "./CoachingShortened.mp4", link: "https://sridhardev.netlify.app" },
   { title: "Job Finder Dashboard", video: "./ContentCreatorShorten.mp4", link: "https://sridhardev.netlify.app" },
-  { title: "E-commerce UI", video: "./EduShorten.mp4" },
-  { title: "Travel App", video: "./JordanPlattenShorten.mp4" },
-  { title: "AI Assistant UI", video: "./MikeShorten.mp4" },
-  { title: "Social Feed Design", video: "./Nate_Shortenmp4.mp4" },
+  { title: "E-commerce UI", video: "./EduShorten.mp4",link: "https://sridhardev.netlify.app" },
+  { title: "Travel App", video: "./JordanPlattenShorten.mp4",link: "https://sridhardev.netlify.app" },
+  { title: "AI Assistant UI", video: "./MikeShorten.mp4",link: "https://sridhardev.netlify.app" },
+  { title: "Social Feed Design", video: "./Nate_Shortenmp4.mp4",link: "https://sridhardev.netlify.app" },
 ];
 
 const Recent = () => {

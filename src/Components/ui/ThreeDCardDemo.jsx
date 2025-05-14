@@ -22,9 +22,9 @@ export function ThreeDCardDemo() {
   ];
 
   return (
-    <div className="flex flex-col items-start  px-4 py-12 gap-10">
+    <div className="flex flex-col items-start  px-4 py-12 gap-5 md:gap-10">
       {/* Section Title */}
-       <h2 className="text-3xl text-white font-bold">Recent Work</h2>
+       <h2 className=" text-white font-bold" style={{ fontSize: 'clamp(1.5rem, 2vw, 2.25rem)' }}>What Can I Do</h2>
 
       {/* Cards */}
       <div className="flex flex-wrap justify-center gap-8">

@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { HoverBorderGradient } from '../Components/ui/hover-border-gradient'; // adjust the path as needed
+import { HoverBorderGradient } from '../Components/ui/hover-border-gradient'; // adjust the path if needed
 
 const AceternityLogo = () => {
   return (
@@ -28,7 +27,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full text-white p-4">
+    <div className="w-full text-white p-4 bg-black relative">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <h2 className="text-2xl font-semibold">Sridhar</h2>
 
@@ -53,32 +52,43 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="md:hidden z-50">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Optional backdrop */}
       {isOpen && (
-        <div className="md:hidden mt-4 flex flex-col gap-4 text-lg">
-          <ul className="flex flex-col gap-3">
+        <div
+          onClick={() => setIsOpen(false)}
+          className="fixed inset-0bg-opacity-40 z-30"
+        />
+      )}
+
+      {/* Mobile Sliding Menu */}
+      <div
+        className={`md:hidden fixed top-16 right-0 w-3/4 h-full bg-black text-white z-40 transform transition-transform duration-300 ease-in-out ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex flex-col gap-6 p-6 text-lg">
+          <ul className="flex flex-col gap-4">
             <li>About</li>
             <li>Approach</li>
             <li>My Work</li>
             <li>Blogs</li>
-          </ul>
-          <HoverBorderGradient
-            containerClassName="rounded-full mt-2 w-fit"
-            as="button"
-            className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 py-2 px-6"
+        
+          <li
+            className=" text-[#a600ff]"
+            onClick={() => alert('Book a Meet clicked!')}
           >
-            <AceternityLogo />
-            <span>Book a Meet</span>
-          </HoverBorderGradient>
+            Book a Meet
+          </li>
+          </ul>
         </div>
-      )}
+      </div>
     </div>
   );
 };

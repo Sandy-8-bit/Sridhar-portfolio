@@ -4,9 +4,9 @@ import { motion } from "motion/react";
 
 export function WorldMapDemo() {
   return (
-    <div className=" dark:bg-black bg-black w-full">
-      <div className="max-w-7xl mx-auto text-center">
-        <p className="font-bold text-xl md:text-4xl dark:text-white text-white">
+    <div className=" dark:bg-black px-4 md:px-8 bg-black w-full">
+      <div className="max-w-7xl mx-auto md:text-center text-start">
+        <p className="font-bold   md:text-4xl dark:text-white text-white"  style={{ fontSize: 'clamp(1.5rem, 2vw, 2.25rem)' }}>
           Remote{" "}
           <span className="text-neutral-400">
             {"Connectivity".split("").map((word, idx) => (
@@ -21,10 +21,8 @@ export function WorldMapDemo() {
             ))}
           </span>
         </p>
-        <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
-          Break free from traditional boundaries. Work from anywhere, at the
-          comfort of your own studio apartment. Perfect for Nomads and
-          Travellers.
+        <p className="text-sm md:text-lg text-center text-neutral-500 max-w-2xl mx-auto py-4">
+Break free from traditional boundaries. Serve clients from anywhere in the world, all from the comfort of your own studio apartment. Perfect for Nomads and Travellers.
         </p>
       </div>
       <WorldMap
