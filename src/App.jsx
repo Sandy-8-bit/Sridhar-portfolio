@@ -23,7 +23,7 @@ function App() {
 
        
     <Hero/>
-    <div className='flex  flex-col w-full px-20 gap-10 md:px-10 '>
+    <div className='flex  flex-col w-full px-4 gap-10 md:px-10 '>
       
 
       <About/>
