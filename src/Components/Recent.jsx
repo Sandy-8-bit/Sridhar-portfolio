@@ -24,7 +24,7 @@ const Recent = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 lg:px-12">
+    <div className="px-4 ">
       <div className="flex justify-between items-center mb-6 sm:mb-8">
         <h2 className="text-white font-bold" style={{ fontSize: 'clamp(1.5rem, 2vw, 2.25rem)' }}>
           Recent Work

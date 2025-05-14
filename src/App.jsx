@@ -11,6 +11,7 @@ import { InfiniteMovingCards } from './Components/ui/infinite-moving-cards'
 import { InfiniteMovingCardsDemo } from './Components/InfiniteMovingCardsDemo'
 import { WorldMapDemo } from './Components/ui/WorldMapDemo'
 import { ThreeDCardDemo } from './Components/ui/ThreeDCardDemo'
+import { Footer } from './Components/Footer'
 
 
 
@@ -22,7 +23,7 @@ function App() {
 
        
     <Hero/>
-    <div className='flex  flex-col w-full gap-10 md:px-10 '>
+    <div className='flex  flex-col w-full px-20 gap-10 md:px-10 '>
       
 
       <About/>
@@ -30,6 +31,7 @@ function App() {
      <Recent/>
      <WorldMapDemo/>
       <InfiniteMovingCardsDemo/>
+      <Footer/>
       
     </div>
     </>

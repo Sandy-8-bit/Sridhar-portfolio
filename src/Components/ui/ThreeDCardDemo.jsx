@@ -22,7 +22,7 @@ export function ThreeDCardDemo() {
   ];
 
   return (
-    <div className="flex flex-col items-start  px-4  gap-5 md:gap-10">
+    <div className="flex flex-col items-start  gap-5 md:gap-10">
       {/* Section Title */}
        <h2 className=" text-white font-bold" style={{ fontSize: 'clamp(1.5rem, 2vw, 2.25rem)' }}>What Can I Do</h2>
 

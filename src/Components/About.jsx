@@ -14,7 +14,7 @@ const isLeftInView = useInView(leftRef, { once: true, margin: "0px 0px -20% 0px"
   const isTrustInView = useInView(trustRef, { once: true, margin: "-100px" });
 
   return (
-    <div className="flex flex-col justify-center gap-6 p-font text-white px-4 py-8">
+    <div className="flex flex-col justify-center gap-6 p-font text-white  py-8">
       <div className="w-full">
         <h2 className="text-center font-bold" style={{ fontSize: "clamp(1.5rem, 4vw, 2.5rem)" }}>
           About me

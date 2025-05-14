@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export function WorldMapDemo() {
   return (
-    <div className=" dark:bg-black px-4 md:px-8 bg-black w-full">
+    <div className="    w-full">
       <div className="max-w-7xl mx-auto md:text-center text-start">
         <p className="font-bold   md:text-4xl dark:text-white text-white"  style={{ fontSize: 'clamp(1.5rem, 2vw, 2.25rem)' }}>
           Remote{" "}

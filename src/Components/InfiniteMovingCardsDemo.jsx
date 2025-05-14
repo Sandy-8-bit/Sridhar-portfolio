@@ -3,8 +3,8 @@ import { InfiniteMovingCards } from "../Components/ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="w-full px-4 md:px-8">
-      <div className="rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-start justify-center relative overflow-hidden py-8">
+    <div className="w-full ">
+      <div className="rounded-md flex flex-col antialiased  items-start justify-center relative overflow-hidden py-8">
         {/* Heading aligned to top-left */}
         <h2 className=" text-white font-bold mb-4 self-start" style={{ fontSize: 'clamp(1.5rem, 2vw, 2.25rem)' }}>
           Client Review
